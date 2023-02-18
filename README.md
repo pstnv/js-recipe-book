@@ -2,7 +2,7 @@
 <a href="https://pstnv-recipe-book.glitch.me/"> https://pstnv-recipe-book.glitch.me </a>
 
 <div align="center">
-  <img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/picPreview_7.png?v=1661081041346">
+  <img src="src/preview.png">
 </div>
 <br>
 
