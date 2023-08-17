@@ -1,3 +1,7 @@
+:root {
+	--color-dark-grey: rgb(61, 67, 80, 0.5);
+}
+
 html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -57,7 +61,6 @@ h1 {
 	margin: 10px;
 	text-align: center;
 	font-size: 50px;
-    color: #f6c213;
     color: rgb(255, 255, 255, 0.8);
     font-weight: 700;
     -webkit-text-stroke: 1px rgb(61, 67, 80);
@@ -77,31 +80,31 @@ h1 {
 }
 
 #inputForm::-webkit-input-placeholder {
-	color: rgb(61, 67, 80, 0.5);
+	color: var(--color-dark-grey);
 	font-family: 'Oswald', sans-serif;
 	font-weight: lighter;
 }
 
 #inputForm::-moz-placeholder {
-	color: rgb(61, 67, 80, 0.5);
+	color: var(--color-dark-grey);
 	font-family: 'Oswald', sans-serif;
 	font-weight: lighter;
 }
 
 #inputForm:-ms-input-placeholder {
-	color: rgb(61, 67, 80, 0.5);
+	color: var(--color-dark-grey);
 	font-family: 'Oswald', sans-serif;
 	font-weight: lighter;
 }
 
 #inputForm::-ms-input-placeholder {
-	color: rgb(61, 67, 80, 0.5);
+	color: var(--color-dark-grey);
 	font-family: 'Oswald', sans-serif;
 	font-weight: lighter;
 }
 
 #inputForm::placeholder {
-	color: rgb(61, 67, 80, 0.5);
+	color: var(--color-dark-grey);
 	font-family: 'Oswald', sans-serif;
 	font-weight: lighter;
 }
@@ -156,8 +159,8 @@ h1 {
 	display: -ms-flexbox;
 	display: flex;
 	background-color: #ffffff;
-	-webkit-box-shadow: -5px -5px 5px rgb(61, 67, 80, 0.5), 5px 5px 5px rgb(61, 67, 80, 0.5);
-	box-shadow: -5px -5px 5px rgb(61, 67, 80, 0.5), 5px 5px 5px rgb(61, 67, 80, 0.5);
+	-webkit-box-shadow: -5px -5px 5px var(--color-dark-grey), 5px 5px 5px var(--color-dark-grey);
+	box-shadow: -5px -5px 5px var(--color-dark-grey), 5px 5px 5px var(--color-dark-grey);
 	cursor: pointer;
 }
 
@@ -274,11 +277,6 @@ hr {
 	font-size: 13px;
 }
 
-
-/* .oneIngredient:nth-child(even) {
-    color: #be430a;
-} */
-
 .link {
 	-ms-flex-item-align: end;
 	align-self: flex-end;
@@ -314,8 +312,8 @@ hr {
 .selected .back {
 	-webkit-filter: none;
 	filter: none;
-	-webkit-box-shadow: -5px -5px 5px rgb(61, 67, 80, 0.5), 5px 5px 5px rgb(61, 67, 80, 0.5);
-	box-shadow: -5px -5px 5px rgb(61, 67, 80, 0.5), 5px 5px 5px rgb(61, 67, 80, 0.5);
+	-webkit-box-shadow: -5px -5px 5px var(--color-dark-grey), 5px 5px 5px var(--color-dark-grey);
+	box-shadow: -5px -5px 5px var(--color-dark-grey), 5px 5px 5px var(--color-dark-grey);
 	z-index: 1000;
 	cursor: pointer;
 }
@@ -355,7 +353,7 @@ footer {
 	/*********** MAIN ************/
 	.container {
 		padding: 0;
-    max-width: initial;  /* добавила */
+    	max-width: initial;
 	}
 	.card {
 		margin: 20px 10px;
@@ -368,8 +366,8 @@ footer {
 	.cover {
 		padding-bottom: 60px;
 		width: 310px;
-		-webkit-box-shadow: -3px -3px 3px rgb(61, 67, 80, 0.5), 3px 3px 3px rgb(61, 67, 80, 0.5);
-		box-shadow: -3px -3px 3px rgb(61, 67, 80, 0.5), 3px 3px 3px rgb(61, 67, 80, 0.5);
+		-webkit-box-shadow: -3px -3px 3px var(--color-dark-grey), 3px 3px 3px var(--color-dark-grey);
+		box-shadow: -3px -3px 3px var(--color-dark-grey), 3px 3px 3px var(--color-dark-grey);
 	}
 	.cover__header {
 		margin-right: 10px;
@@ -413,15 +411,14 @@ footer {
 		font-size: 18px;
 	}
 	.selected .back {
-		-webkit-box-shadow: -3px -3px 3px rgb(61, 67, 80, 0.5), 3px 3px 3px rgb(61, 67, 80, 0.5);
-		box-shadow: -3px -3px 3px rgb(61, 67, 80, 0.5), 3px 3px 3px rgb(61, 67, 80, 0.5);
+		-webkit-box-shadow: -3px -3px 3px var(--color-dark-grey), 3px 3px 3px var(--color-dark-grey);
+		box-shadow: -3px -3px 3px var(--color-dark-grey), 3px 3px 3px var(--color-dark-grey);
 	}
 }
 
 @media all and (max-width: 767px) {
 	/************ INTRO ***********/
 	.intro {
-		/* margin-bottom: 50px; */
 		height: 250px;
 	}
 	h1 {
@@ -441,7 +438,6 @@ footer {
 @media all and (max-width: 390px) {
 	/************ INTRO ***********/
 	.intro {
-		/* margin-bottom: 50px; */
 		height: 200px;
 	}
 	h1 {
@@ -462,8 +458,8 @@ footer {
 	.cover {
 		padding-bottom: 40px;
 		width: 240px;
-		-webkit-box-shadow: -3px -3px 3px rgb(61, 67, 80, 0.5), 3px 3px 3px rgb(61, 67, 80, 0.5);
-		box-shadow: -3px -3px 3px rgb(61, 67, 80, 0.5), 3px 3px 3px rgb(61, 67, 80, 0.5);
+		-webkit-box-shadow: -3px -3px 3px var(--color-dark-grey), 3px 3px 3px var(--color-dark-grey);
+		box-shadow: -3px -3px 3px var(--color-dark-grey), 3px 3px 3px var(--color-dark-grey);
 	}
 	.cover__header {
 		margin-right: 5px;
